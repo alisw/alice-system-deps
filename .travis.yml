@@ -9,8 +9,6 @@ script:
 
 install: true
 
-script:
-
 deploy:
   provider: releases
   api_key:
