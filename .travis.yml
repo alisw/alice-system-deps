@@ -1,0 +1,22 @@
+sudo: required
+language: python
+
+services:
+  - docker
+
+script:
+  - docker run -v ${PWD}:/build -v ${PWD}:/output:Z centos:centos7 ci/build.sh
+
+install: true
+
+script:
+
+deploy:
+  provider: releases
+  api_key:
+    secure: YOUR_API_KEY_ENCRYPTED
+  file:
+    - "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
+  skip_cleanup: true
+  on:
+    tags: true
