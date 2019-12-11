@@ -7,7 +7,7 @@ License: GPL
 URL: None
 Group: Alice/SystemDeps 
 Packager: alice-o2-wp3@cern.ch
-Requires: bzip2-devel libcurl-devel ncurses-devel bison-devel flex-devel make perl-devel perl-ExtUtils-Embed 
+Requires: bzip2-devel libcurl-devel ncurses-devel bison-devel flex-devel make perl-devel perl-ExtUtils-Embed python3 git libX11-devel libXpm-devel libXext-devel libXft-devel mesa-libGLU-devel flex bison
 %description
 UC4 is a scheduler application.
 %prep
