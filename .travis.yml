@@ -11,9 +11,10 @@ install: true
 
 deploy:
   provider: releases
-  github_token: ${GITHUB_API_TOKEN}
-  file:
-    - "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
+  api_key:
+    secure: kumCZvsX6E1GIlHc9v011LevLDNkqSenZ3W7Utt6xgebWDrtB0csbyk/Mnv38+DUmY5vuF23Hth1C2INFfvNqnd04Kx8idDDIrErSNKbmSTYOBMxKIK6psokyEjbYLZFH0xmNXevlvE4Q3tsJ>
+    file: "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
   skip_cleanup: true
   on:
     tags: true
+    repo: alisw/alice-system-deps
