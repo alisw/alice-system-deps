@@ -9,12 +9,10 @@ script:
 
 install: true
 
-script:
-
 deploy:
   provider: releases
   api_key:
-    secure: YOUR_API_KEY_ENCRYPTED
+    secure: ${GITHUB_API_TOKEN}
   file:
     - "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
   skip_cleanup: true
