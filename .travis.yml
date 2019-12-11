@@ -13,7 +13,7 @@ deploy:
   provider: releases
   api_key:
     secure: AER0RIyTSwBSQ6cQG5McWxxC0IbwwugQv5rvucRtzi3DOaEznnpXYrJhBGQcpTX8G2y7A4ppPr/ZfyOJq7Jnp5vagjRorv+K9M0ZoApEuxEMOvF060Dswl6lSn/vFIgpT4eZkjYMVqU843H6nIMyL3HNAqE5TRKgCC0t2ys/bpb6uC0PmfE93SSyxoSxaA4RVilagM8EHo7j2zTZrY8Dd8Ng7bkOyTtnsyXTRi+M8GpZaesBl7iiS9rX3weLWdqOYoZpwO6G7lnvTDmSKIAglAEzyEXO7f+cgn4ArpWvFhNbAyuiLWrV6fpif6oXPhmPOxdM50qlnJIDnhOlEsPdecMamyhqfBZvv9kWk3T97n2jSx1DrBwczwt9gwO27+6I0Th4Nk8ht9mbSx90N47pySuzihaGWZaUNuEapnHjlVU88igVlTjVx9hzW5L67Xu/bNUXLDIH0jdrik4C/mitPh09B6EJ64Nlw2hHHc76ZkN/oZb7It6iOggPrxQzvMzxYqIchWsKpVKx0SzOyyLpsErLsoHMnulHwlVOcliE00POEL7tQgVHc1q8JM46ssHXiWi4fwrRoYfOYHB0Pvq0yOY9lsCInB2H8RFqfzrxsquK7QbgqzOz54w7YYfx8iQG4k2yPfFTembCkqq4DGdFZPdRo7ravHHsAAovD05bBew=
-    file: "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
+  file: "output/alice-system-deps-$TRAVIS_TAG-1.x86_64.rpm"
   skip_cleanup: true
   on:
     tags: true
